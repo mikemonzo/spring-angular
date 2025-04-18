@@ -1,0 +1,8 @@
+<div class="">
+    <h1 class="text-center">Book List</h1>
+    <ul class="list-group">
+        <li *ngFor="let book of books" class="list-group-item">
+            <a [routerLink]="['/book', book.id]">{{ book.title }}</a>
+        </li>
+    </ul>
+</div>
